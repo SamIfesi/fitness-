@@ -1,0 +1,140 @@
+.service {
+  background-color: var(--bg-light-green);
+  padding: 60px 60px 30px;
+}
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service-container p {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+.service-btn {
+  background-color: var(--bg-dark-green);
+  color: var(--text-color-white);
+  border: 2px solid var(--bg-dark-green);
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.75s ease-out;
+}
+.service-btn:hover {
+  background-color: transparent;
+  color: var(--text-color-black);
+  border: 2px solid var(--bg-dark-green);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid var(--bg-dark-green);
+}
+.service .offer {
+  padding: 40px 0;
+  font-size: 0.9em;
+}
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item b {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 70px;
+}
+.items-container {
+  background-color: var(--bg-dark-green);
+  color: var(--text-color-white);
+  padding: 40px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.items-container b {
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.items-container p {
+  font-size: 0.9em;
+  /* font-weight: 600; */
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.items-container li {
+  margin: 18px 30px;
+}
+
+.imgs img {
+  border-radius: 15px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+.items-container {
+  grid-row: span 2;
+}
+
+@media (max-width: 768px) {
+  .service {
+    padding: 30px;
+  }
+  .service-container {
+    flex-direction: row;
+    text-align: center;
+  }
+  .service-container p {
+    font-size: 2em;
+  }
+
+  .service .offer {
+    text-align: center;
+  }
+  .container-grid {
+    grid-template-columns: 1fr;
+  }
+  .img-grid {
+    grid-template-columns: 1fr;
+  }
+  .items-container {
+    margin-right: 0;
+  }
+}
+@media (max-width: 500px) {
+  .service {
+    padding: 20px;
+  }
+  .service-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .service-container p {
+    font-size: 1.5em;
+  }
+  .service .offer {
+    font-size: 0.8em;
+  }
+  .items-container {
+    padding: 20px;
+  }
+  .items-container b {
+    font-size: 1.2em;
+  }
+  .items-container p {
+    font-size: 0.8em;
+  }
+  .items-container li {
+    margin: 10px 20px;
+  }
+}

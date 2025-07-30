@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My App</title>
+  </head>
+  <body>
+    <section class="landing">
+      <div class="intro animate__animated animate__zoomIn animate__delay-1s">
+        <h1 class="	">WELCOME TO FITNESS HUB</h1>
+        <p>Stay fit Daily and Live Long</p>
+      </div>
+    </section>
+
+    <nav class="nav-bar" id="nav-bar">
+      <ul class="desktop-bar">
+        <li></li>
+        <li class="nav-hide"><a href="#About-Us">About&nbsp;Us</a></li>
+        <li class="nav-hide"><a href="#Services">Our&nbsp;Services</a></li>
+        <li class="nav-hide"><a href="#Community">Community</a></li>
+        <li class="nav-hide"><a href="#">Contact&nbsp;Us</a></li>
+
+
+        <!-- <button id="darkModeToggle">🌙 Dark Mode</button> -->
+
+
+        <li class="nav-hide"><a href="login.html" class="nav-btn">Join&nbsp;Now</a></li>
+        <li>
+          <label class="open nav-tool" id="toggleBtn"
+            ><i class="fa fa-bars"></i
+          ></label>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="side-bar" id="sideBar">
+      <ul>
+        <li>
+          <label class="close nav-tool" id="toggleBttn"
+            ><i class="fa fa-xmark"></i
+          ></label>
+        </li>
+        <li><a href="#About-Us">About Us</a></li>
+        <li><a href="#Services">Our Services</a></li>
+        <li><a href="#Community">Community</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="login.html" class="nav-btn">Join Now</a></li>
+      </ul>
+    </nav>
+    <div class="overlay" id="overLay"></div>
+
+    <section class="about-section" id="About-Us">
+      <div class="meditate">
+        <h2 class="about-heading">
+          Your Journey to<br />
+          <i class="bigger">Better Health</i><br />
+          Starts Here
+        </h2>
+        <br />
+        <p>
+          Our comprehensive wellness and fitness program guides<br />
+          you towards boosting vitality and well-being.
+        </p>
+
+        <div class="buttons">
+          <a href="#" class="btn btn-outline"
+            >Book&nbsp;a&nbsp;Discovery&nbsp;Call&nbsp;<i class="fa-solid fa-arrow-right-from-line fa-beat-fade"></i></a>
+          <a href="#" class="btn1 btn-outline"
+            >Learn&nbsp;more&nbsp;<i class="fa-solid fa-arrow-right-from-line fa-beat-fade"></i></a>
+        </div>
+      </div>
+      <div class="img-container">
+        <img src="../img/runner.png" alt="Runner" />
+      </div>
+    </section>
+
+    <section class="achievement">
+      <div class="activities">
+        <div class="members">
+          <p class="values">3.2<i class="fa-light fa-k"></i></p>
+          <p>Active Members</p>
+        </div>
+        <div class="members">
+          <p class="values">89<i class="fa-light fa-percent"></i></p>
+          <p>Reach Health Goals</p>
+        </div>
+        <div class="members">
+          <p class="values">24/7</p>
+          <p>Expert Support</p>
+        </div>
+        <div class="txt">
+          <p>
+            We offer advanced monitoring tools and regular<br />assessments to
+            track your progres, identify trends <br />
+            and optimize your wellness journey.
+          </p>
+          <br />
+          <a href="#" target="_blank">Join Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="Services" class="service">
+      <div class="service-container">
+        <p>What We Offer</p>
+        <a href="#" class="service-btn"
+          >Explore Services <i class="fa-solid fa-arrow-right-from-line fa-beat-fade"></i></a>
+      </div>
+      <div class="offer">
+        <p>
+          We offer advanced monitoring tools and regular<br />assessments to
+          track your progres, identify trends and <br />optimize your wellness
+          journey.
+        </p>
+      </div>
+      <div class="container-grid">
+        <div class="item item-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            height="50px"
+            width="50px"
+            fill="var(--text-color-black)"
+          >
+            <path
+              d="m652-140 60 60H220q-24 0-42-18t-18-42v-680q0-24 18-42t42-18h372l208 239v487q0 14-7.5 28.5T774-102L562-314q-20 12-39.68 17-19.69 5-42.32 5-62 0-104.5-42.5T333-439q0-62 42.5-104.5T480-586q62 0 104.5 42.5T627-439q0 23-6.5 44T601-358l139 139v-403L568-820H220v680h432ZM480-352q38 0 62.5-29.5T567-450q0-33-26-54.5T480-526q-35 0-61 21.5T393-450q0 39 24.5 68.5T480-352Zm0-98Zm0 0Z"
+            />
+          </svg>
+          <b>Nutrition Tracking</b>
+          <p>
+            Custom meal plans and <br />
+            nutritional guidance tailored<br />to your unique needs,<br />preferences,
+            and health goals<br />for sustainable lifestyle<br />changes.
+          </p>
+        </div>
+        <div class="item item-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            height="50px"
+            width="50px"
+            fill="var(--text-color-black)"
+          >
+            <path
+              d="M51-404q-26-43-38.5-86.5T0-576q0-110 77-187t187-77q63 0 119.5 26t96.5 71q40-45 96.5-71T696-840q110 0 187 77t77 187q0 42-12.5 85T909-405q-10-12-22.5-20.5T860-440q20-35 30-69t10-67q0-85-59.5-144.5T696-780q-55 0-108.5 32.5T480-649q-54-66-107.5-98.5T264-780q-85 0-144.5 59.5T60-576q0 33 10 67t30 69q-14 6-26.5 15T51-404ZM0-80v-53q0-39 42-63t108-24q13 0 24 .5t22 2.5q-8 17-12 34.5t-4 37.5v65H0Zm240 0v-65q0-65 66.5-105T480-290q108 0 174 40t66 105v65H240Zm540 0v-65q0-20-3.5-37.5T765-217q11-2 22-2.5t23-.5q67 0 108.5 24t41.5 63v53H780ZM480-230q-80 0-130 24t-50 61v5h360v-6q0-36-49.5-60T480-230Zm-330-20q-29 0-49.5-20.5T80-320q0-29 20.5-49.5T150-390q29 0 49.5 20.5T220-320q0 29-20.5 49.5T150-250Zm660 0q-29 0-49.5-20.5T740-320q0-29 20.5-49.5T810-390q29 0 49.5 20.5T880-320q0 29-20.5 49.5T810-250Zm-330-70q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-440q0 50-34.5 85T480-320Zm0-180q-25 0-42.5 17T420-440q0 25 17.5 42.5T480-380q26 0 43-17.5t17-42.5q0-26-17-43t-43-17Zm0 60Zm0 300Z"
+            />
+          </svg>
+          <b>Fitness Coaching</b>
+          <p>
+            Experts-designed workout <br />
+            programs that adapt to your<br />fitness level, schedule, and<br />preference,
+            helping you build<br />strength and endurance<br />safely.
+          </p>
+        </div>
+        <div class="item item-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            height="50px"
+            width="50px"
+            fill="var(--text-color-black)"
+          >
+            <path
+              d="M480-80q-122 0-201-31t-79-107q0-76 79-107t201-31q122 0 201 31t79 107q0 76-79 107T480-80Zm0-86q-122 0-178-21t-64-72q-5 8-6.5 20t-1.5 21q0 52 64.5 80T480-110q121 0 185.5-28t64.5-80q0-9-1.5-21t-6.5-20q-9 51-64.5 72T480-166Zm0-30q106 0 157-16.5t51-49.5q0-33-51-48.5T480-326q-106 0-157.5 15.5T271-262q0 33 51.5 49.5T480-196Zm-37-215v-197h-77l151-274v197h77L443-411Zm37 215Zm0 86Zm0-56Z"
+            />
+          </svg>
+          <b>Mental Wellness</b>
+          <p>
+            Stess management<br />
+            techniques, mindfulness<br />practices, and mental health<br />resources
+            to support your<br />emotional well being and <br />resilience.
+          </p>
+        </div>
+      </div>
+      <div class="img-grid">
+        <div class="items-container">
+          <b>
+            Our comprehensive Health and Wellness program is designed to promote
+            healthier lifestyles, and enhance over all well-being
+          </b>
+          <p>
+            Acommunity driver intiative dedicated to promoting physical and
+            mental wellbeing
+          </p>
+          <ul>
+            <li>Early detection of health risk</li>
+            <li>Personalized welliness plan</li>
+            <li>Access to certified professionals</li>
+            <li>Community Support</li>
+          </ul>
+        </div>
+        <div class="imgs-1 imgs">
+          <img src="../img/BP-check.png" alt="BP-checker" width="100%" />
+        </div>
+        <div class="imgs-2 imgs">
+          <img
+            src="../img/Theraphy-section.png"
+            alt="Therapy-section"
+            width="100%"
+          />
+        </div>
+        <div class="imgs-3 imgs">
+          <img
+            src="../img/Man-weightlifting.png"
+            alt="Man-lifting weight"
+            width="100%"
+          />
+        </div>
+        <div class="imgs-4 imgs">
+          <img
+            src="../img/Man-meditating.png"
+            alt="Man meditating"
+            width="100%"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="community" id="Community">
+      <div class="community-container">
+        <hr />
+        <p class="community-heading">
+          <l>25%</l> Off<br />
+          Discount<br />
+          <i>Fitness</i> Classes<br />
+          this Summer
+        </p>
+        <br />
+        <p class="para">
+          Once we receive your consult request, we <br />
+          match you up to a trainer who guides you <br />
+          through this journey to fitness
+        </p>
+        <div class="bttn-div">
+          <a href="#" class="bttn">Join Member</a>
+        </div>
+      </div>
+      <img
+        src="../img/woman-exercise.png"
+        alt="woman-exercising"
+        class="img-contain"
+        height="500"
+        width="800"
+      />
+    </section>
+
+    <section class="price-section">
+      <h2>Join Our <i>Fitness</i> Class</h2>
+      <div class="price-container">
+        <div class="starter-plan">
+          <p>Starter Plan</p>
+          <num>$15</num>
+          <p>Per user, Per Month</p>
+          <div class="membership">
+            <a href="#" class="membership-btn">Join Membership</a>
+          </div>
+          <hr />
+          <p class="paragraph">
+            6 Yoga classes per month<br />
+            2 Fitness training per month<br />
+            Access to online resources<br />
+            Monthky weliness newsletter
+          </p>
+        </div>
+        <div class="starter-plan Basic">
+          <p>Basic Plan</p>
+          <num>$30</num>
+          <p>Per user, Per Month</p>
+          <div class="membership">
+            <a href="#" class="membership-btn butn1">Join Membership</a>
+          </div>
+          <hr />
+          <p class="paragraph">
+            10 Yoga classes per month<br />
+            5 Fitness training per month<br />
+            Access to online resources<br />
+            Monthky weliness newsletter
+          </p>
+        </div>
+        <div class="starter-plan">
+          <p>Premium Plan</p>
+          <num>$120</num>
+          <p>Per user, Per Month</p>
+          <div class="membership">
+            <a href="#" class="membership-btn">Join Membership</a>
+          </div>
+          <hr />
+          <p class="paragraph">
+            30 Yoga classes per month<br />
+            15 Fitness training per month<br />
+            Access to online resources<br />
+            Monthky weliness newsletter
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="comment-section">
+      <hr />
+      <h2>What Our Clients Say?</h2>
+      <div class="comment-container">
+        <div class="comment-up">
+          <img
+            src="../img/sam.jpg"
+            alt="User-comment"
+            width="100"
+            height="100"
+            class="clip-img"
+          />
+          <b>Samrose Ifesi</b>
+          <i class="brand-title">Web Developer</i>
+          <br />
+          <p>
+            The community aspect made all the <br />
+            difference. Having support from both<br />experts and peers kept me
+            motivated<br />through challenges. I've never felt <br />
+            stronger or more balanced in<br />
+            my life.
+          </p>
+        </div>
+        <div class="comment-up">
+          <img
+            src="../img/TOCHUKWU .jpg"
+            alt="User-comment"
+            width="100"
+            height="100"
+            class="clip-img"
+          />
+          <b>Stormcee Tochukwu</b>
+          <i class="brand-title">Brand Designer</i>
+          <br />
+          <p>
+            The vital Life program completely <br />
+            Changed my relationship with health.<br />
+            I've lost 30 pounds, feel more energetic<br />
+            than ever, and most importantly, I've<br />
+            learned sustainable habits that will last <br />
+            a lifetime
+          </p>
+        </div>
+        <div class="comment-up">
+          <img
+            src="../img/ginika.jpg"
+            alt="User-comment"
+            width="100"
+            height="100"
+            class="clip-img"
+          />
+          <b>Patricia Ginika</b>
+          <i class="brand-title">UI/UX Design</i>
+          <br />
+          <p>
+            After years of neglecting my health, this<br />
+            progrme gave me the structure and<br />
+            support I needed. The preventive care<br />
+            approach helped me catch potential<br />
+            issues early and feel confident about<br />
+            my health future.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="Transform-section">
+      <div class="transform-container">
+        <h1>Ready to Transform Your Health?</h1>
+        <p>
+          Join Vital Life today and start your journey<br />toward lasting
+          wellness and virtality.
+        </p>
+        <a href="#" class="trans-btn">Join Now</a>
+      </div>
+    </section>
+
+    <section class="footer-section">
+      <div class="upper-footer">
+        <p>
+          SUBSCRIBE TO OUR NEWSLETTER <br />
+          <a href="#">Sign Up and enjoy our services better</a>
+        </p>
+        <div class="search-footer">
+          <input type="email" name="" id="" placeholder="Email" />
+          <a href="#">Send</a>
+        </div>
+        <div class="footer-icon">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+      <div class="link-footer">
+        <div class="logo-footer">
+          <a href="#">
+            <img
+              src="../img/Logo.png"
+              alt="Logo"
+              width="150"
+              ;
+              height="100"
+              ;
+            />
+          </a>
+        </div>
+        <div class="contact-footer">
+          <ul>
+            <li><p>PHONE AND EMAIL</p></li>
+            <li><a href="mailto:" class="items-footer">Abcdef@gmail.com</a></li>
+            <li><a href="tel:+" class="items-footer">+234 8234 567 890</a></li>
+          </ul>
+        </div>
+        <div class="pages-footer">
+          <ul>
+            <li><p>PAGES</p></li>
+            <li><a href="#About-Us">About Us</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Join Now</a></li>
+          </ul>
+        </div>
+        <div class="services-footer">
+          <ul>
+            <li><p>SERVICES</p></li>
+            <li><a href="#">Fitness training</a></li>
+            <li><a href="#">Mental Wellness</a></li>
+            <li><a href="#">Nutritional tracking</a></li>
+            <li><a href="#">Health Coaching</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>COPYRIGHT 2025: ALL RIGHTS RESERVED</p>
+    </div>
+    <i class="fa fa-arrow-circle-up animate__animated animate__heartBeat animate__infinite animate__delay-3s" id="scrollToTopBtn" title="Go to top"></i>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

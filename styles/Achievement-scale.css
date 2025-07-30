@@ -1,0 +1,64 @@
+.achievement {
+  background-color: var(--bg-dark-green);
+  color: var(--text-color-white);
+  text-align: center;
+}
+.activities {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+}
+.values {
+  font-size: 4em;
+  font-weight: 500;
+}
+.values i {
+  font-size: 3.5rem;
+  color: var(--accent-green);
+}
+.activities .txt {
+  text-align: justify;
+  margin-right: 20px;
+  font-size: 0.9em;
+}
+.txt a {
+  color: var(--accent-green);
+}
+.txt a:hover {
+  color: var(--text-color-white);
+}
+
+@media (max-width: 768px) {
+  .activities {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+  }
+  .values {
+    font-size: 3em;
+  }
+  .values i {
+    font-size: 2.5rem;
+  }
+  .activities .txt {
+    margin-right: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .activities {
+    padding: 20px;
+  }
+  .values {
+    font-size: 2.5em;
+  }
+  .values i {
+    font-size: 2rem;
+  }
+  .activities .txt {
+    font-size: 0.8em;
+  }
+  
+}

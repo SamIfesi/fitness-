@@ -1,0 +1,102 @@
+.nav-bar {
+  background-color: var(--bg-light-green);
+  box-shadow: 0 3px 8px var(--shadow-color-sidebar);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.desktop-bar {
+  margin-right: 50px;
+}
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-bar li {
+  height: 70px;
+  padding-top: 15px;
+}
+
+/* UNDERLINE ANIMATION STARTS HERE */
+.nav-bar a,
+.nav-bar label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-weight: 400;
+  height: 80%;
+  color: var(--text-color-black);
+  border: 2px solid transparent;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.nav-bar a:hover {
+  transform: scale(1.05);
+}
+.nav-bar a::after {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  border-radius: 10px;
+  left: 50%;
+  bottom: -5px;
+  width: 80%;
+  height: 2px;
+  background-color: var(--bg-dark-green);
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s ease-in-out;
+}
+.nav-bar a:active::after,
+.nav-bar a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+/* UNDERLINE ANIMATIONENDS HERE */
+
+.nav-tool {
+  font-size: 2em;
+  display: flex;
+}
+.nav-tool.open {
+  display: none;
+}
+.nav-bar .nav-btn {
+  background-color: var(--bg-dark-green);
+  color: var(--text-color-white);
+  border-radius: 8px;
+  border: 2px solid var(--bg-dark-green);
+  padding: 10px 20px !important;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Disable UNDERLINE effect for the 5th navigation item */
+.nav-bar .nav-btn:hover {
+  transform: none;
+  background-color: var(--accent-green);
+  color: var(--text-color-black);
+  border: 2px solid var(--bg-dark-green);
+}
+.nav-bar .nav-btn:hover::after {
+  transform: translateX(-50%) scaleX(0);
+}
+
+@media (max-width: 768px) {
+  .nav-hide {
+    display: none;
+  }
+  .nav-tool.open {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .nav-hide {
+    display: none;
+  }
+  .nav-tool.open {
+    display: block;
+  }
+}

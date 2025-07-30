@@ -1,0 +1,107 @@
+.price-section {
+  background-color: var(--bg-light-green);
+  padding: 30px;
+}
+.price-section h2 {
+  text-align: center;
+  font-size: 2em;
+}
+.price-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+.price-container .starter-plan {
+  margin: 30px;
+  padding: 80px;
+  background-color: white;
+  color: var(--text-color-black);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px var(--shadow-color-sidebar);
+  transition: all 0.3s ease-in-out;
+}
+.price-container .starter-plan:hover {
+  transform: scale(1.02);
+}
+.starter-plan num {
+  font-size: 3.5em;
+  font-weight: 600;
+  color: var(--bg-dark-green);
+}
+.membership {
+  margin: 30px 0 30px 0;
+}
+.membership .membership-btn {
+  padding: 7px 20px;
+  border-radius: 30px;
+  border: 2px solid var(--bg-dark-green);
+  color: var(--text-color-black);
+  transition: all .75s ease-out;
+}
+.membership .membership-btn:hover {
+  background-color: var(--bg-dark-green);
+  color: var(--text-color-white);
+  border: 2px solid var(--bg-dark-green);
+}
+.starter-plan hr {
+  width: 60%;
+  justify-self: center;
+  border: 2px solid black;
+}
+.starter-plan .paragraph {
+    line-height: 2;
+    font-size: .7em;
+    margin-top: 25px;
+}
+
+/* STYLES FOR BASIC CARD */
+.price-container .Basic {
+    background-color: var(--bg-dark-green);
+    color: #a0cb63;
+}
+.price-container .Basic num {
+    color: #a0cb63;
+}
+.price-container .Basic .butn1 {
+    color: var(--text-color-black);
+    background-color: #a0cb63;
+    border: 2px solid #a0cb63;
+}
+.price-container .Basic .butn1:hover {
+    background-color: transparent;
+    color: var(--text-color-white);
+    border: 2px solid #a0cb63;
+}
+.price-container .Basic hr {
+    width: 60%;
+    justify-self: center;
+    border: 2px solid #a0cb63;
+}
+@media (max-width: 768px) {
+  /* .price-container {
+    flex-direction: column;
+  }
+  .price-container .starter-plan {
+    margin: 15px;
+    padding: 40px;
+  } */
+}
+@media (max-width: 500px) {
+  .price-container {
+    gap: 10px;
+  }
+  .price-container .starter-plan {
+    padding: 20px 30px;
+    margin: 15px;
+  }
+  .membership .membership-btn {
+    padding: 5px 15px;
+    font-size: 1em;
+  }
+  .starter-plan .paragraph {
+    font-size: 0.9em;
+  }
+}

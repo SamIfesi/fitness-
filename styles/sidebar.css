@@ -1,0 +1,48 @@
+.side-bar {
+  position: fixed;
+  background-color: var(--bg-dark-green);
+  box-shadow: 5px 0 10px var(--shadow-color-sidebar);
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  padding: 20px;
+  transition: all 1.5s ease;
+  transform: translateX(-150%);
+  z-index: 1100;
+}
+.side-bar.active {
+  transform: translateX(0);
+}
+.side-bar li {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-top: 0;
+}
+.close {
+  margin-left: 70%;
+}
+.side-bar a,
+.side-bar label {
+  color: var(--text-color-white);
+  padding: 15px 30px;
+  margin-right: 0;
+  cursor: pointer;
+  transition: all 1.75s ease-in-out;
+}
+.side-bar a:hover {
+  transform: scale(1.03);
+}
+.side-bar.active ~ .overlay {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  transition: background-color 1.5s ease-out;
+}
