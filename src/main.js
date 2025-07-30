@@ -1,4 +1,4 @@
-import "./style.css";
+// import "./style.css";
 
 /** CODE FOR SIDE BAR */
 toggleBtn.addEventListener("click", function () {
